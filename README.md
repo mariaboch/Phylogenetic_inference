@@ -3,7 +3,7 @@
 ## Final assignment for comparative genomics classes
 ## author: Maria Bochenek
 
-This pipeline infers phylogenetic tree for collection of species genomes names given in a similar format as `filename`. It downloads genomes, retrieves genes, then clusters the genes into homology groups. Only "$1-1$" homology groups are selected for further inference. Then program computes multiple sequence alignment, infers NJ trees for each group following two cases: 
+This pipeline infers phylogenetic tree for collection of species genomes names given in a similar format as `Mycobacterium_list.txt`. It downloads genomes, retrieves genes, then clusters the genes into homology groups. Only "$1-1$" homology groups are selected for further inference. Then program computes multiple sequence alignment, infers NJ trees for each group following two cases: 
 * without bootstraping and 
 * with bootstraping alignments and selecting for further analysis only trees with mean bootstrap support $\geq$ 75.
 
@@ -18,4 +18,10 @@ Finally program infers species tree using consensus and supertree methods for bo
 * R: ape
 
 ## Usage
-`phylogeny.py`
+`python3 phylogeny.py ` [-h] -n genomelistfile [-thr] [-e]
+
+where
+* `-h, --help` show help message and exit
+* `-n` genomelistfile path to a file containing species' genome names relative to main directory
+* `-thr, --mean_support_thr` Mean bootstrap support threshold. Trees with mean bootstrap support below threshold will be discarded. Default value is 75 (75%).
+* `-e, --email` E-mail address (for Entrez download)
