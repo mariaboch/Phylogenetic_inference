@@ -12,10 +12,10 @@ Finally program infers species tree using consensus and supertree methods for bo
 ## Required software and packages
 
 * python: Biopython
+* R: ape
 * [MMSeq2](https://github.com/soedinglab/MMseqs2)
 * [ClustalW](http://www.clustal.org/clustal2/)
 * [fasturec](http://bioputer.mimuw.edu.pl/gorecki/fasturec/) and add its executable to your PATH or place executable in the same working directory as `phylogeny.py`
-* R: ape
 
 ## Usage
 `python3 phylogeny.py [-h] -n genomelistfile [-thr] [-e]`
