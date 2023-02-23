@@ -18,11 +18,12 @@ Finally program infers species tree using consensus and supertree methods for bo
 * [fasturec](http://bioputer.mimuw.edu.pl/gorecki/fasturec/) and add its executable to your PATH or place executable in the same working directory as `phylogeny.py`
 
 ## Usage
-`python3 phylogeny.py [-h] -n genomelistfile [-thr] [-e]`
+`python3 phylogeny.py [-h] -n genomelistfile [--paralogs] [--bootstap] [-thr] [-e]`
 
 where
 * `-h, --help` show help message and exit
 * `-n genomelistfile path` to a file containing species' genome names relative to main directory
+* `--paralogs` calculate supertree including clusters with paralogs
 * `--bootstap` calculate bootstrap supports for gene trees.
 * `-bn` number of bootstrap times default=50.
 * `-thr, --mean_support_thr` Mean bootstrap support threshold. Trees with mean bootstrap support below threshold will be discarded. Default value is 75 (75%).
