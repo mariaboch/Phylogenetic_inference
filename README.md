@@ -4,7 +4,7 @@
 ## author: Maria Bochenek
 
 This pipeline infers phylogenetic tree for collection of species genomes names given in a similar format as `Mycobacterium_list.txt`. It downloads genomes, retrieves genes, then clusters the genes into homology groups. Only "$1-1$" homology groups are selected for further inference. Then program computes multiple sequence alignment, infers NJ trees for each of the following: 
-* 1-1 cluster without bootstraping
+* 1-1 clusters without bootstraping
 * 1-1 clusters with bootstraping alignments and selecting for further analysis only trees with mean bootstrap support $\geq$ 75.
 * clusters with paralogs 
 
@@ -12,8 +12,8 @@ Finally program infers species tree using consensus and supertree methods for bo
 
 ## Required software and packages
 
-* python: Biopython
-* R: ape
+* [python: Biopython](https://biopython.org/)
+* [R: ape](https://cran.r-project.org/web/packages/ape/index.html)
 * [MMSeq2](https://github.com/soedinglab/MMseqs2)
 * [ClustalW](http://www.clustal.org/clustal2/)
 * [fasturec](http://bioputer.mimuw.edu.pl/gorecki/fasturec/) and add its executable to your PATH or place executable in the same working directory as `phylogeny.py`
