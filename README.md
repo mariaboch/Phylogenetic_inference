@@ -29,3 +29,14 @@ where
 * `-bn` number of bootstrap times default=50.
 * `-thr, --mean_support_thr` Mean bootstrap support threshold. Trees with mean bootstrap support below threshold will be discarded. Default value is 75 (75%).
 * `-e, --email` E-mail address (for Entrez download)
+
+Script for plotting trees
+
+`python3 plots.py [-h] -n genomelistfile [-p --paralogs] [-b --bootstap]`
+
+where 
+
+* `-h, --help` show help message and exit
+* `-n genomelistfile path` to a file containing species' genome names relative to main directory
+* `-p --paralogs` visualize tree inference that included paralogs, use only if `-p` was used with `phylogeny.py` (default = False)
+* `-b --bootstap` visualize tree inference that included bootstraping, use only if `-b` was used with `phylogeny.py` (default = False)
