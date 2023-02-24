@@ -13,6 +13,7 @@ Finally program infers species tree using consensus and supertree methods for bo
 ## Required software and packages
 
 * [python: Biopython](https://biopython.org/)
+* [python: ete3](http://etetoolkit.org/)
 * [R: ape](https://cran.r-project.org/web/packages/ape/index.html)
 * [R: ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html)
 * [MMSeq2](https://github.com/soedinglab/MMseqs2)
